@@ -10,7 +10,7 @@ This is also just a starting point, I will add much more to the page, including:
 	-more to the page in general	
 	
 There are also a few things to fix, like:
-	-fix how website looks on phone (landscape is fine, portrait needs work)
+	-fix how website looks on phone and small windows (landscape is fine, portrait needs work)
 	-try and fix the resize issue with the rolling photo (i may need help with this one)
 
 You can check it out here: https://waybo26.github.io/website/
