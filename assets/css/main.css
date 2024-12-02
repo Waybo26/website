@@ -223,7 +223,7 @@ input, select, textarea {
 	/* background photo and scaling #StayTuned */
 
 		background: #348cb2 url("images/space3.jpg") center ;
-		background-repeat: repeat-x;
+		/*background-repeat: repeat-x;*/
 		height: 100%;
 		left: 0;
 		opacity: 1;
