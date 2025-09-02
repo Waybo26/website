@@ -1,35 +1,56 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Background from './components/Background';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Navigation from './components/Navigation';
+import Home from './components/Home';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Links from './components/Links';
+import Leadership from './components/Leadership';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    document.body.classList.remove('is-preload');
+    
+    const handleTouchMove = () => false;
+    window.ontouchmove = handleTouchMove;    
+    const handleOrientationChange = () => {
+      document.body.scrollTop = 0;
+    };
+    window.onorientationchange = handleOrientationChange;
+
+    // Cleanup
+    return () => {
+      window.ontouchmove = null;
+      window.onorientationchange = null;
+    };
+  }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <div id="wrapper">
+        <Background />
+        <div id="overlay"></div>
+        <div id="main">
+          <Header />
+          <Navigation />
+          
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/links" element={<Links />} />
+            <Route path="/leadership" element={<Leadership />} />
+          </Routes>
+          
+          <Footer />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
