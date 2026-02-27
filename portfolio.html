@@ -45,54 +45,113 @@
 				<section id="experience" class="section">
 					<div class="section-content">
 						<h2>Experience</h2>
-						<p class="section-intro">Some Internships I did during college</p>
-						<div class="entries">
-							<div class="entry">
-								<h3>MongoDB</h3>
-								<p></p>
-								<h3>Software Engineering Intern</h3>
-								<p class="meta">Tech Company Inc. &nbsp;&bull;&nbsp; Summer 2024</p>
-								<p>Developed and maintained full-stack web applications using React, Node.js, and PostgreSQL. Collaborated with a team of 5 engineers to implement new features and improve application performance by 30%. Participated in code reviews and agile development practices.</p>
+						<p class="section-intro">some of the jobs I've had so far</p>
+
+						<div class="experience-carousel">
+							<button class="experience-arrow prev disabled" id="experience-prev" aria-label="Previous experiences">
+								&#8592;
+							</button>
+
+							<div class="entries experience-entries">
+								<div class="entry">
+									  <!-- Colored banner top -->
+									<div class="entry-banner" style="background: rgb(25, 106, 16);">
+										<span class="entry-company-name"> mongoDB </span>
+										<img class="entry-logo" src="assets/images/mongo.png" alt="MongoDB">
+									</div>
+
+									<!-- Existing transparent bottom — unchanged -->
+									<div class="entry-details">
+										<h3>Jr Systems Engineer</h3>
+										<p class="meta">October 2025 - Present</p>
+										<p> - As a Jr Systems Engineer at MongoDB, I work on maintaining and improving internal tools and infrastructure. </p>
+										<p> - responsibilities include debugging system issues, implementing new features, and collaborating with cross-functional teams to ensure smooth operations.</p>
+										<p> - responsibilities include debugging system issues, implementing new features, and collaborating with cross-functional teams to ensure smooth operations.</p>
+
+									</div>
+								</div>
+								<div class="entry">
+									<h3>Software Engineering Intern</h3>
+									<p class="meta">June 2025 - August 2025</p>
+									<p>Developed and maintained full-stack web applications using modern web technologies. Collaborated with a team of engineers to implement new features, improve performance, and participate in code reviews.</p>
+								</div>
+								<div class="entry">
+									<h3>Software Engineering Intern</h3>
+									<p class="meta"> June 2024 - August 2024 </p>
+									<p>Created responsive web interfaces using HTML, CSS, and JavaScript. Worked on improving user experience and accessibility standards while debugging and optimizing site performance.</p>
+								</div>
+								<div class="entry">
+									<h3>Hardware Engineering Intern</h3>
+									<p class="meta"> May 2023 - August 2023 </p>
+									<p>Worked with embedded systems and hardware prototypes, assisted with lab setups, and supported testing and validation of new hardware designs.</p>
+								</div>
+								<div class="entry">
+									<h3>Lead Code Sensei</h3>
+									<p class="meta"> May 2022 - August 2022</p>
+									<p>Worked with embedded systems and hardware prototypes, assisted with lab setups, and supported testing and validation of new hardware designs.</p>
+								</div>
+								<!-- Additional experiences can be added here -->
 							</div>
-							<div class="entry">
-								<h3>Software Engineering Intern</h3>
-								<p class="meta">Digital Solutions LLC &nbsp;&bull;&nbsp; Spring 2023</p>
-								<p>Created responsive web interfaces using HTML, CSS, and JavaScript. Worked on improving user experience and accessibility standards. Assisted in debugging and optimizing website performance across multiple browsers and devices.</p>
-							</div>
-							<div class="entry">
-								<h3>Hardware Engineering Intern</h3>
-								<p class="meta">Stevens Institute of Technology &nbsp;&bull;&nbsp; Fall 2023 - Present</p>
-								<p>Support students in understanding complex data structures and algorithms. Conduct office hours, grade assignments, and provide one-on-one tutoring. Help students debug code and develop problem-solving strategies.</p>
-							</div>
+
+							<button class="experience-arrow next" id="experience-next" aria-label="Next experiences">
+								&#8594;
+							</button>
 						</div>
 					</div>
 				</section>
+			
 
 				<!-- Projects Section -->
 				<section id="projects" class="section">
 					<div class="section-content">
-						<h2>Projects</h2>
-						<p class="section-intro">Showcasing my passion for building innovative solutions</p>
-						<div class="entries">
-							<div class="entry">
-								<h3>E-Commerce Platform</h3>
-								<p class="meta">React, Node.js, MongoDB, Stripe API &nbsp;&bull;&nbsp; 2024</p>
-								<p>A full-stack e-commerce application with user authentication, product catalog, shopping cart, and payment processing. Implemented secure payment integration using Stripe and deployed on AWS. Features include real-time inventory updates and order tracking.</p>
+							<h2 class="space-text-primary mb-6">Projects</h2>
+							<p class="space-text-secondary mb-6">
+								click for more info
+							</p>
+							
+							<div class="project-grid">
+								
+								<div class="space-grid-box" onclick="openModal('Project One', 'Here is the detailed description for Project One.')">
+									<h3 class="space-text-primary mb-2">Project One</h3>
+									<p class="space-text-secondary">A short description of the first project.</p>
+									<div class="mt-4 space-text-secondary text-sm opacity-70">
+										Click to learn more &rarr;
+									</div>
+								</div>
+						
+								<div class="space-grid-box" onclick="openModal('Project Two', 'Here is the detailed description for Project Two.')">
+									<h3 class="space-text-primary mb-2">Project Two</h3>
+									<p class="space-text-secondary">A short description of the second project.</p>
+									<div class="mt-4 space-text-secondary text-sm opacity-70">
+										Click to learn more &rarr;
+									</div>
+								</div>
+						
+								<div class="space-grid-box" onclick="openModal('Project Three', 'Here is the detailed description for Project Three.')">
+									<h3 class="space-text-primary mb-2">Project Three</h3>
+									<p class="space-text-secondary">A short description of the third project.</p>
+									<div class="mt-4 space-text-secondary text-sm opacity-70">
+										Click to learn more &rarr;
+									</div>
+								</div>
+		
+								<div class="space-grid-box" onclick="openModal('Project 4', 'Here is the detailed description for Project Three.')">
+									<h3 class="space-text-primary mb-2">Project 4</h3>
+									<p class="space-text-secondary">A short description of the third project.</p>
+									<div class="mt-4 space-text-secondary text-sm opacity-70">
+										Click to learn more &rarr;
+									</div>
+								</div>
+						
 							</div>
-							<div class="entry">
-								<h3>Task Management Dashboard</h3>
-								<p class="meta">Vue.js, Express, PostgreSQL &nbsp;&bull;&nbsp; 2023</p>
-								<p>Interactive task management system with drag-and-drop functionality, team collaboration features, and real-time updates. Built RESTful APIs and implemented WebSocket connections for live synchronization across multiple users.</p>
-							</div>
-							<div class="entry">
-								<h3>Weather Forecast App</h3>
-								<p class="meta">JavaScript, HTML5, CSS3, OpenWeather API &nbsp;&bull;&nbsp; 2023</p>
-								<p>Responsive weather application that displays current conditions and 7-day forecasts. Features geolocation support, city search, and beautiful data visualizations. Optimized for mobile devices with offline capability.</p>
-							</div>
-							<div class="entry">
-								<h3>Algorithm Visualizer</h3>
-								<p class="meta">Python, Pygame, Data Structures &nbsp;&bull;&nbsp; 2022</p>
-								<p>Educational tool that visualizes sorting and pathfinding algorithms in real-time. Helps students understand algorithm complexity through interactive animations. Includes implementations of Dijkstra's, A*, and various sorting algorithms.</p>
+						</div>
+						
+						<div id="spaceModal" class="space-modal-overlay">
+							<div class="space-modal-content">
+								<div class="space-modal-close" onclick="closeModal()">✕</div>
+								
+								<h2 id="modalTitle" class="space-text-primary mb-4">Title</h2>
+								<p id="modalDescription" class="space-text-secondary">Description</p>
 							</div>
 						</div>
 					</div>
@@ -122,19 +181,33 @@
 			</div>
 		</div>
 		<script>
+			function openModal(title, description) {
+				document.getElementById('modalTitle').innerText = title;
+				document.getElementById('modalDescription').innerText = description;
+				document.getElementById('spaceModal').classList.add('active');
+			}
+
+			function closeModal() {
+				document.getElementById('spaceModal').classList.remove('active');
+			}
+
 			window.onload = function() { 
 				document.body.classList.remove('is-preload'); 
 				
 				// Smooth scroll for navigation links
 				document.querySelectorAll('#navigation a[href^="#"]').forEach(anchor => {
 					anchor.addEventListener('click', function (e) {
-						e.preventDefault();
-						const target = document.querySelector(this.getAttribute('href'));
-						if (target) {
-							target.scrollIntoView({
-								behavior: 'smooth',
-								block: 'start'
-							});
+						const href = this.getAttribute('href');
+						// Allow normal navigation for external links (like index.html)
+						if (href.startsWith('#')) {
+							e.preventDefault();
+							const target = document.querySelector(href);
+							if (target) {
+								target.scrollIntoView({
+									behavior: 'smooth',
+									block: 'start'
+								});
+							}
 						}
 					});
 				});
@@ -171,7 +244,56 @@
 						ticking = true;
 					}
 				}, { passive: true });
+
+				// Experience carousel logic
+				const experienceEntries = Array.from(document.querySelectorAll('.experience-entries .entry'));
+				const prevBtn = document.getElementById('experience-prev');
+				const nextBtn = document.getElementById('experience-next');
+				const visibleCount = 3;
+				let currentIndex = 0;
+
+				function updateExperienceCarousel() {
+					experienceEntries.forEach((entry, index) => {
+						if (index >= currentIndex && index < currentIndex + visibleCount) {
+							entry.style.display = 'block';
+						} else {
+							entry.style.display = 'none';
+						}
+					});
+
+					// Update arrow disabled state
+					if (currentIndex === 0) {
+						prevBtn.classList.add('disabled');
+					} else {
+						prevBtn.classList.remove('disabled');
+					}
+
+					if (currentIndex + visibleCount >= experienceEntries.length) {
+						nextBtn.classList.add('disabled');
+					} else {
+						nextBtn.classList.remove('disabled');
+					}
+				}
+
+				if (experienceEntries.length > 0 && prevBtn && nextBtn) {
+					updateExperienceCarousel();
+
+					prevBtn.addEventListener('click', function () {
+						if (currentIndex > 0) {
+							currentIndex--;
+							updateExperienceCarousel();
+						}
+					});
+
+					nextBtn.addEventListener('click', function () {
+						if (currentIndex + visibleCount < experienceEntries.length) {
+							currentIndex++;
+							updateExperienceCarousel();
+						}
+					});
+				}
 			}
+
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
 		</script>
