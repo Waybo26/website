@@ -112,6 +112,20 @@ input, select, textarea {
 		a:hover {
 			border-color: transparent;
 		}
+	
+	.space-section-silver-glow {
+	background: rgba(255, 255, 255, 0.12);
+	backdrop-filter: blur(15px);
+	border: 2px solid rgba(255, 255, 255, 0.5);
+	border-radius: 1rem;
+	padding: 2rem;
+	box-shadow: 0 0 30px rgba(255, 255, 255, 0.3),
+				0 0 60px rgba(255, 255, 255, 0.1),
+				inset 0 0 30px rgba(255, 255, 255, 0.05);
+	animation: pulse-silver-glow 4s ease-in-out infinite;
+	}
+
+
 
 /* icons on homepage */
 
@@ -146,6 +160,23 @@ input, select, textarea {
 		}
 
 /* wrapper section */
+
+	@keyframes pulse-silver-glow {
+  		0%, 100% {
+			box-shadow: 0 0 30px rgba(255, 255, 255, 0.3),
+						0 0 60px rgba(255, 255, 255, 0.15),
+						0 10px 40px rgba(255, 255, 255, 0.15),
+						inset 0 0 20px rgba(255, 255, 255, 0.05);
+    		border-color: rgba(255, 255, 255, 0.5);
+  		}
+  		50% {
+			box-shadow: 0 0 45px rgba(255, 255, 255, 0.45),
+						0 0 90px rgba(255, 255, 255, 0.25),
+						0 10px 50px rgba(255, 255, 255, 0.2),
+						inset 0 0 25px rgba(255, 255, 255, 0.1);
+			border-color: rgba(255, 255, 255, 0.7);
+  		}
+	}	
 
 	@-moz-keyframes wrapper {
 		0% {
@@ -838,6 +869,8 @@ input, select, textarea {
 		position: relative;
 		overflow: hidden;
 		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+		animation: pulse-silver-glow 4s ease-in-out infinite;
+
 	}
 
 	.entry:before {
