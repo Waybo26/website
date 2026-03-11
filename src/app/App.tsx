@@ -98,9 +98,9 @@ export default function App() {
             fontWeight: 600,
             textAlign: "center",
           }}
-          aria-label="Current status: Finishing up grad school"
+          aria-label="Current status: Finishing up school"
         >
-          MISSION STATUS: FINISHING UP GRAD SCHOOL
+          MISSION STATUS: FINISHING UP SCHOOL
         </p>
 
         {/* Intro Hero */}

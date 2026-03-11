@@ -188,28 +188,28 @@ export function Portfolio() {
 
   const projects: ProjectProps[] = [
     { 
-      title: "Nebula Core", 
-      category: "Engine", 
-      icon: Rocket, 
+      title: "Student Fingerprint", 
+      category: "Software", 
+      icon: Globe, 
       image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1080&auto=format&fit=crop",
-      description: "Advanced Python-based propulsion modeling engine integrated directly into a resilient Snowflake data lake. Built to process over 1 million telemetry records per second with microsecond latency.",
-      githubUrl: "https://github.com/Waybo26/nebula-core",
+      description: "SF is a writing platform for students and teachers that captures the process behind a written assignment.",
+      githubUrl: "https://devpost.com/software/sf-9d0eyw",
       technologies: [
-        { name: "Python", Icon: Code, color: "#3b82f6" },
+        { name: "Typescript", Icon: Code, color: "#3b82f6" },
         { name: "Snowflake", Icon: Snowflake, color: "#38bdf8" },
-        { name: "MongoDB", Icon: Database, color: "#22c55e" }
+        { name: "SQLite", Icon: Database, color: "#22c55e" }
       ]
     },
     { 
-      title: "Atlas Hub", 
-      category: "Logistics", 
+      title: "Hotel Las Torres", 
+      category: "Software", 
       icon: Globe, 
       image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1080&auto=format&fit=crop",
-      description: "A centralized supply chain visibility platform serving deep space outposts. Leverages real-time streaming to predict resource bottlenecks using distributed AWS services.",
+      description: "Real-time room reservation system for a hotel web application by developing full-system availability checking and administrative user functionality",
       githubUrl: "https://github.com/Waybo26/atlas-hub",
       technologies: [
-        { name: "TypeScript", Icon: Terminal, color: "#3178c6" },
-        { name: "AWS Cloud", Icon: Cloud, color: "#f59e0b" },
+        { name: "JavaScript", Icon: Terminal, color: "#3178c6" },
+        { name: "Vercel", Icon: Cloud, color: "#f59e0b" },
         { name: "MongoDB", Icon: Database, color: "#22c55e" }
       ]
     },
@@ -222,7 +222,7 @@ export function Portfolio() {
       date: "2025 - PRESENT",
       color: "#df120b",
       companyLogo: networkDoctorLogo,
-      description: "- Working on Project Team - - As Jr Systems Engineer, I engineered resilient telemetry pipelines and autonomous control stacks to keep mission-critical navigation systems online across hostile environments - - Automate incident response workflows by developing Python scripts to analyze network logs and system metrics"
+      description: "- Worked on Project Team - - As Jr Systems Engineer, I engineered resilient telemetry pipelines and autonomous control stacks to keep mission-critical navigation systems online across hostile environments - - Automate incident response workflows by developing Python scripts to analyze network logs and system metrics"
     },
     {
       role: "Software Engineer Intern",
@@ -230,7 +230,7 @@ export function Portfolio() {
       date: "2024 - 2025",
       color: "#47a248",
       companyLogo: mongodbLogo,
-      description: "- Working on Query Optimization Team (2024) and Atlas Stream Processing Team (2025) - - As Software Engineer Intern, I shipped hardened data orchestration tools and observability dashboards for telemetry analysts working on distributed spacecraft fleets - - Developed numerous integration and unit test suites in JavaScript to stress-test database querying operations, focusing on workload scalability and future command integration"
+      description: "- Worked on Query Optimization Team (2024) and Atlas Stream Processing Team (2025) - - As Software Engineer Intern, I shipped hardened data orchestration tools and observability dashboards for telemetry analysts working on distributed spacecraft fleets - - Developed numerous integration and unit test suites in JavaScript to stress-test database querying operations, focusing on workload scalability and future command integration"
     },
     {
       role: "Hardware Engineering Intern",
@@ -238,7 +238,7 @@ export function Portfolio() {
       date: "Summer 2023",
       color: "#15d9f3",
       companyLogo: armLogo,
-      description: "- Working on Power Team (2023) - As Hardware Engineering Intern, I validated embedded control nodes and telemetry signal paths that keep mission launch systems synchronized under extreme vibration - Developed efficient Python scripts to reformat mesh interconnect power readings into numerical data reports, significantly reducing manual calculation time for numerous team members"
+      description: "- Worked on Power Analysis Team - - As Hardware Engineering Intern, I validated embedded control nodes and telemetry signal paths that keep mission launch systems synchronized under extreme vibration - - Developed efficient Python scripts to reformat mesh interconnect power readings into numerical data reports, significantly reducing manual calculation time for numerous team members"
     }
   ];
 
@@ -253,6 +253,8 @@ export function Portfolio() {
           transition={{ duration: 1 }}
           style={{ textAlign: "center", marginBottom: 64, marginTop: 120, scrollMarginTop: 120 }}
         >
+          <br /> 
+          <br />
           <p style={{ color: "#fb923c", letterSpacing: "0.4em", fontSize: 17, marginBottom: 16, fontWeight: 600 }}>
             MISSION HISTORY
           </p>
@@ -298,6 +300,14 @@ export function Portfolio() {
           transition={{ delay: 0.8, duration: 1 }}
           style={{ textAlign: "center", marginBottom: 64, marginTop: 120, scrollMarginTop: 120 }}
         >
+          <br /> 
+          <br />
+          <br /> 
+          <br />
+          <br /> 
+          <br />
+          <br /> 
+          <br />
           <p style={{ color: "#fb923c", letterSpacing: "0.4em", fontSize: 17, marginBottom: 16, fontWeight: 600 }}>
             ORBITAL ARCHIVE // 2026
           </p>
@@ -344,6 +354,12 @@ export function Portfolio() {
           transition={{ duration: 1 }}
           style={{ textAlign: "center", marginBottom: 64, marginTop: 160, scrollMarginTop: 120 }}
         >
+          <br /> 
+          <br />
+          <br /> 
+          <br />
+          <br /> 
+          <br />
           <p style={{ color: "#fb923c", letterSpacing: "0.4em", fontSize: 17, marginBottom: 16, fontWeight: 600 }}>
             COMMUNICATIONS
           </p>
@@ -400,7 +416,6 @@ export function Portfolio() {
           style={{ marginTop: 80, textAlign: "center", opacity: 0.3 }}
         >
           <p style={{ fontSize: 15, letterSpacing: "0.2em", color: "#ffffffba" }}>
-            ESTABLISHED IN THE FRONTIER // MISSION SECTOR 07
           </p>
         </motion.div>
       </footer>
