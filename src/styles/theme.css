@@ -1,0 +1,66 @@
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #020817;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Focus styles for keyboard accessibility */
+  :focus-visible {
+    outline: 2px solid #fb923c;
+    outline-offset: 2px;
+  }
+
+  /* Skip link (screen reader accessible) */
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fb923c;
+    color: #020817;
+    padding: 8px 16px;
+    z-index: 10000;
+    font-weight: 600;
+    border-radius: 0 0 8px 8px;
+    text-decoration: none;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+
+  @keyframes moveStars {
+    from { background-position: 0 0; }
+    to   { background-position: -2000px 0; }
+  }
+
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+
+}
